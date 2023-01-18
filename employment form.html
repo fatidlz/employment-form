@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+<title>employee form</title>
+<meta charset="UTF-8"/>
+<style>
+*{
+text-align:center;
+
+}
+datalist {
+  text-align: center;
+  padding-left:500px;
+  margin-left: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  writing-mode: vertical-lr;
+  width:130px;
+  max-width: fit-content;
+}
+option {
+  padding: 0;
+}
+
+
+</style>
+</head>
+<body>
+<legend>Employee Interests Survey form</legend>
+
+<form>
+<fieldset>
+   
+<p>
+<label>Enter your name: <input type="text"/></label>
+</p>
+<p>
+<label>Enter your department: <input type="text"/></label>
+</p>
+<p>
+        <label>select your age (between 20 & 40)</label>
+        <br>
+            <input type="range" min="20" max="40" list="values" /> 
+        <datalist id="values">
+            <option value="20" label="20"></option>
+            <option value="25" label="25"></option>
+            <option value="30" label="30"></option>
+            <option value="35" label="35"></option>
+            <option value="40" label="40"></option>
+          </datalist>
+</p>
+<p>
+    tell us about your self!
+    <br/>
+    <textarea name="discription" cols="20" rows="6"></textarea>
+</p>
+<p>
+Do you exercise at home?
+<label><input type="radio" name="yes" value="yes"/>yes</label>
+<label></label><input type="radio" name="no" value="no"/>no</label>
+</p>
+<p>
+How do you like to read about your favorite topic?
+<input type="checkbox">book</input>
+<input type="checkbox">online resources</input>
+<input type="checkbox">magazines</input>
+<input type="checkbox">apps</input>
+</p>
+<p>
+What genre of movies do you like?
+
+<select>
+<option>comedy</option>
+<option>romance</option>
+<option>adventure</option>
+<option>animation</option>
+<option>scary</option>
+</select>
+</p>
+<footer>
+<button type="submit">Submit form</button>
+</footer>
+</fieldset>
+</form>
+</body>
+</html>
